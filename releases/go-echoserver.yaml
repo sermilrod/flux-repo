@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: go-echoserver
   chart:
-    git: ssh://git@github.com/sermilrod/flux-repo
+    git: ssh://git@github.com/sermilrod/go-echoserver
     ref: master
     path: charts/go-echoserver
   values:
