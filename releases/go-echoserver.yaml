@@ -17,8 +17,6 @@ spec:
     image: 
       repository: sermilrod/go-echoserver
       tag: 9ad1790e25e2d88f621c7a7bdbebaefd759cfc9b
-    persistence:
-      enabled: false
     resources:
       requests:
         memory: 32Mi
@@ -26,4 +24,3 @@ spec:
       limits:
         memory: 64Mi
         cpu: 20m
-    serviceType: ClusterIP
