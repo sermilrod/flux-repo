@@ -1,0 +1,27 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: go-echoserver
+  namespace: dev
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: glob:0.1.*
+spec:
+  releaseName: go-echoserver
+  chart:
+    git: ssh://git@github.com/sermilroid/flux-repo
+    ref: master
+    path: charts/go-echoserver
+  values:
+    image: sermilrod/go-echoserver:9ad1790e25e2d88f621c7a7bdbebaefd759cfc9b
+    persistence:
+      enabled: false
+    resources:
+      requests:
+        memory: 32Mi
+        cpu: 10m
+      limits:
+        memory: 64Mi
+        cpu: 20m
+    serviceType: ClusterIP
