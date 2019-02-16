@@ -16,7 +16,7 @@ spec:
   values:
     image: 
       repository: sermilrod/go-echoserver
-      tag: 9ad1790e25e2d88f621c7a7bdbebaefd759cfc9b
+      tag: da3e3c790a58c05e19ae930376f8566cbdd1ae2a
     resources:
       requests:
         memory: 32Mi
