@@ -42,7 +42,6 @@ $ helm upgrade -i flux \
     --set helmOperator.tillerNamespace=flux \
     --set helmOperator.chartSyncInterval=1m \
     --set git.branch=master \
-    --set git.label=prod-cluster-name \
     --namespace flux \
     --tiller-namespace flux \
     weaveworks/flux
@@ -98,7 +97,6 @@ $ helm upgrade -i flux \
     --set helmOperator.tillerNamespace=flux \
     --set helmOperator.chartSyncInterval=1m \
     --set git.branch=dev \
-    --set git.label=dev-cluster-name \
     --namespace flux \
     --tiller-namespace flux \
     weaveworks/flux
@@ -113,7 +111,6 @@ $ helm upgrade -i flux \
     --set helmOperator.tillerNamespace=flux \
     --set helmOperator.chartSyncInterval=1m \
     --set git.branch=preprod \
-    --set git.label=preprod-cluster-name \
     --namespace flux \
     --tiller-namespace flux \
     weaveworks/flux
