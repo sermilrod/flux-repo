@@ -12,7 +12,7 @@ spec:
   chart:
     git: ssh://git@github.com/sermilrod/flux-repo
     ref: master
-    path: charts/go-echoserver
+    path: dev-cluster/charts/go-echoserver
   values:
     image: 
       repository: sermilrod/go-echoserver
