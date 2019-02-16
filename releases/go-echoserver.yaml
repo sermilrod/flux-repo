@@ -3,7 +3,7 @@ apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: go-echoserver
-  namespace: prod
+  namespace: product
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:0.1.*
@@ -16,7 +16,7 @@ spec:
   values:
     image: 
       repository: sermilrod/go-echoserver
-      tag: da3e3c790a58c05e19ae930376f8566cbdd1ae2a
+      tag: 8fefdac9a910158c62f788e8a990f779e7ac0489
     resources:
       requests:
         memory: 32Mi
